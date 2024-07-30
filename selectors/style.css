@@ -20,7 +20,51 @@ a[title] {
     text-decoration: none;
 }
 
-/* Pseudo-class Selector */
+/* Descendant Selector */
+.parent p {
+    color: blue;
+}
+
+/* Child Selector */
+.parent>.child {
+    color: #ff9408;
+}
+
+/* Adjacent Sibling Selector */
+.child+.adjacent-sibling {
+    color: brown;
+}
+
+/* General Sibling Selector */
+.child~p {
+    color: pink;
+}
+
+/* Pseudo-class Selectors */
+.parent2>p:first-child {
+    background-color: lightblue;
+}
+
+.parent2>p:last-child {
+    background-color: lightgreen;
+}
+
+.parent2>p:nth-child(2) {
+    background-color: lightcoral;
+}
+
 a:hover {
     color: orange;
+}
+
+/* Pseudo-element Selectors */
+.hover-effect::before {
+    content: "Hover over me! ";
+    color: #d4c343;
+    cursor: pointer;
+}
+
+.hover-effect:hover::after {
+    content: " You did it!";
+    color: #c92fa2;
 }

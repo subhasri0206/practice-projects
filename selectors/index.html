@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Selectors Example</title>
+    <title>Selectors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Simple Selectors in CSS</h1>
+    <h1>SELECTORS</h1>
+    <h2>Simple Selectors in CSS</h2>
     <p class="highlight">This is a paragraph with a highlighted words.</p>
     <div id="unique-element">This div has a unique ID.</div>
     <ul>
@@ -16,6 +17,27 @@
         <li>List item 3</li>
         <li class="highlight">List item 4 with a class</li>
     </ul>
-    <a href="#" title="Sample link">This is a link</a>
+    <h2>Combinator and Pseudo Selectors in CSS</h2>
+    <div class="container">
+        <div class="parent">
+            <p class="descendant1">This paragraph is a descendant of .parent</p>
+            <p class="descendant2">This paragraph is a descendant of .parent</p>
+            <div class="child">This div is a direct child of .parent</div>
+            <p class="adjacent-sibling">This paragraph is adjacent sibling of .child</p>
+            <p class="general-sibling">This paragraph is a general sibling of .child</p>
+            <p class="general-sibling">This paragraph is a general sibling of .child</p>
+            <p class="general-sibling">This paragraph is a general sibling of .child</p>
+        </div>
+        <div class="parent2">
+            <p class="first-child">This is the first child of .parent2</p>
+            <p class="last-child">This is the last child of .parent2</p>
+            <p class="nth-child">This is the second child of .parent2</p>
+        </div>
+        <a href="#" title="Sample link">This is a link</a>
+        <div class="hover-container">
+            <p>This is a paragraph.</p>
+            <p class="hover-effect">Hover over this paragraph to see the effect.</p>
+        </div>
+    </div>
 </body>
 </html>
