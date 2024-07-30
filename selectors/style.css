@@ -1,0 +1,26 @@
+/* Type Selector */
+h1 {
+    color: darkblue;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID Selector */
+#unique-element {
+    color: green;
+    font-weight: bold;
+}
+
+/* Attribute Selector */
+a[title] {
+    color: red;
+    text-decoration: none;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: orange;
+}
