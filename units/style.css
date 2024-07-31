@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+    /* 1 rem = 16px */
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    /* 32px (2 * 16px) */
+    margin-bottom: 1rem;
+    /* 16px (1 * 16px) */
+}
+
+.text {
+    font-size: 1.5rem;
+    /* 24px (1.5 * 16px) */
+    margin-bottom: 1rem;
+    /* 16px (1 * 16px) */
+}
+
+.nested-container {
+    font-size: 2rem;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.nested-container h2 {
+    font-size: 1.5em;
+    /* 48px (1.5 * 32px) */
+    margin-bottom: 0.5em;
+    /* 16px (0.5 * 32px) */
+}
+
+.nested-container p {
+    font-size: 1.2em;
+    /* 38.4px (1.2 * 32px) */
+    margin-bottom: 0.5em;
+    /* 16px (0.5 * 32px) */
+}
