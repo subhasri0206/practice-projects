@@ -1,36 +1,39 @@
 body {
-    width: 80%;
-    background-color: bisque;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
 }
 
-.box-vmin {
-    height: 30vh;
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container {
+    max-width: 80%;
+    flex-grow: 1;
+}
+
+/* Sizing with vw */
+.vw-image {
     width: 80vw;
-    border: 2px solid gold;
-    margin-bottom: 10px;
-    padding: 10px;
+    height: auto;
 }
 
-.box-vmax {
-    height: 30vh;
-    width: 80vw;
-    border: 2px solid gold;
-    margin-bottom: 10px;
-    padding: 10px;
+/* Sizing with vh */
+.vh-image {
+    width: auto;
+    height: 80vh;
 }
 
-.vminbox-percenatge {
-    height: 30%;
+/* Sizing with percentage */
+.percent-image {
     width: 80%;
-    border: 2px solid gold;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.vmaxbox-percentage {
-    height: 30%;
-    width: 80%;
-    border: 2px solid gold;
-    margin-bottom: 10px;
-    padding: 10px;
+    height: auto;
 }
