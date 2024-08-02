@@ -1,0 +1,36 @@
+body {
+    width: 80%;
+    background-color: bisque;
+}
+
+.box-vmin {
+    height: 30vh;
+    width: 80vw;
+    border: 2px solid gold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.box-vmax {
+    height: 30vh;
+    width: 80vw;
+    border: 2px solid gold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.vminbox-percenatge {
+    height: 30%;
+    width: 80%;
+    border: 2px solid gold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.vmaxbox-percentage {
+    height: 30%;
+    width: 80%;
+    border: 2px solid gold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
