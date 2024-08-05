@@ -1,0 +1,44 @@
+/* Embed method 2: Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Embed method 3: Using font face */
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts-practice/fonts/Montserrat-BlackItalic.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Common properties for all h1-h6 and p tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    text-align: justify;
+    text-decoration: solid;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-stretch: condensed;
+    font-size-adjust: 0.58;
+    font-kerning: normal;
+    text-indent: 20px;
+    margin: 20px 0;
+}
+
+/* Specific styles for h1-h6 and p with different fonts */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.Montserrat-Black {
+    font-family: 'Montserrat-Black', sans-serif;
+}
