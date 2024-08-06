@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+.container {
+    /* Background Color */
+    background-color: #333;
+
+    /* Background Image */
+    background-image: url('../backgrounds-practice/images/bg-image.jpg');
+
+    /* Background Repeat */
+    background-repeat: repeat-y;
+
+    /* Background Position */
+    background-position: center;
+
+    /* Background Size */
+    background-size: cover;
+
+    /* Background Attachment */
+    background-attachment: fixed;
+
+    /* Background Origin */
+    background-origin: padding-box;
+
+    /* Background Clip */
+    background-clip: content-box;
+
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+    padding: 10px;
+    text-indent: 80px;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
