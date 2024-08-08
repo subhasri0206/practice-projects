@@ -55,34 +55,50 @@ img {
     border-radius: 10px;
 }
 
-.gradient-box-right {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    margin: 20px;
-}
-
-.gradient-box-left {
-    background: linear-gradient(to left, #ff7e5f, #feb47b);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    margin: 20px;
-}
-
-.gradient-box-radial {
-    background: radial-gradient(circle, #3523be, #45666f);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    margin: 20px;
-}
-
+.gradient-box-right,
+.gradient-box-left,
+.gradient-box-radial,
 .gradient-box-conic {
-    background: conic-gradient(from 45deg, #6a2344, #b0a83b, #1e8339);
     padding: 20px;
     text-align: center;
     color: #fff;
     margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-box-right::before,
+.gradient-box-left::before,
+.gradient-box-radial::before,
+.gradient-box-conic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.gradient-box-right::before {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.gradient-box-left::before {
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+}
+
+.gradient-box-radial::before {
+    background: radial-gradient(circle, #3523be, #45666f);
+}
+
+.gradient-box-conic::before {
+    background: conic-gradient(from 45deg, #6a2344, #b0a83b, #1e8339);
+}
+
+.gradient-box-right:hover::before,
+.gradient-box-left:hover::before,
+.gradient-box-radial:hover::before,
+.gradient-box-conic:hover::before {
+    opacity: 1;
 }
