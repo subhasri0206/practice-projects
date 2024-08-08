@@ -6,6 +6,8 @@ body {
 }
 
 .container {
+    padding: 20px;
+    text-align: center;
     /* Background Color */
     background-color: #333;
 
@@ -51,4 +53,36 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.gradient-box-right {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.gradient-box-left {
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.gradient-box-radial {
+    background: radial-gradient(circle, #3523be, #45666f);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.gradient-box-conic {
+    background: conic-gradient(from 45deg, #6a2344, #b0a83b, #1e8339);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
 }
